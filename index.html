@@ -472,6 +472,18 @@ table {
             <p id="totalCrs" style="text-align: left; padding-left: 10%;"></p>
             <p id="totalCrdt" style="text-align: left; padding-left: 10%;"></p>
         </div>
+
+	      <div class="btn">
+
+        <button onclick="addCourse()" style="background-color: #18a318;">+ Add Course</button>
+        <button onclick="removeCourse()">- Remove Course</button>
+
+      </div>
+
+      <button onclick="calcCgpa()" style="background-color: #294bb9;">Calculate CGPA</button>
+      
+      
+<button onClick="window.location.reload();">Reset</button>
       
       <p id="cgpa-calc" style="font-weight: 700;">Your GPA is:</p>
     </div>
@@ -479,6 +491,8 @@ table {
    </div>
 
  <button type="button" name="btnprint" value="Print" onclick="PrintMe('divid')"> Print </button>  
+<button type="button" name="btnprint" value="Print" id="printButton")"> Print </button> 
+
 
 <!--<button onclick="window.print()">Print this page</button> -->
 
@@ -490,6 +504,12 @@ table {
     </div>
 
   </div>
+
+<script>
+    document.getElementById('printButton').addEventListener('click', function() {
+        window.print(); // 
+    });
+</script>
 
     
 
